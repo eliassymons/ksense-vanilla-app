@@ -1,0 +1,76 @@
+body {
+  background-color: #f4f1bb;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #22577a;
+  font-weight: 800;
+}
+.user-heading {
+  text-align: center;
+  font-weight: 400;
+}
+.table-container {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table tr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+th {
+  cursor: pointer;
+  outline: 1px solid black;
+  border-radius: 0.3rem;
+}
+.active {
+  background-color: rgb(85, 170, 85);
+}
+.user {
+  transition: all 0.1s ease-in;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.post {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1.5rem;
+  height: 12rem;
+  padding: 1rem;
+  width: 90vw;
+  transition: all 0.1s ease-in-out;
+  max-width: 30rem;
+  text-align: center;
+  background-color: #5ca4a9;
+  overflow: hidden;
+}
+
+.post:hover {
+  scale: 1.02;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #73cbd1;
+}
+.title {
+  text-transform: capitalize;
+}
